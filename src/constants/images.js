@@ -6,6 +6,8 @@ import circle from "../assets/circle.svg";
 import userlogo from "../assets/userlogo.svg"
 import react from "../assets/react.png";
 import redux from "../assets/redux.png";
+import pic1 from "../assets/pic1.png";
+import pic2 from "../assets/pic2.png";
 export default {
   
   email,
@@ -15,4 +17,6 @@ export default {
   circle,
   node,
   userlogo,
+  pic1,
+  pic2
 };

@@ -177,9 +177,11 @@
     position: relative;
 
     img {
-        width: 100%;
+        width: 100%;    
+        height: 400px;
         object-fit: contain;
         z-index: 1;
+        margin-bottom: 4rem;
     }
 
     .overlay_circle {
@@ -187,6 +189,7 @@
         left: 0;
         right: 0;
         bottom: 0;
+        top: 2rem;
         z-index: 0;
         width: 100%;
         height: 90%;
