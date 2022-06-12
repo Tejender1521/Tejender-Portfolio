@@ -1,13 +1,11 @@
-import React from 'react'
-import { images } from '../../constants';
+import React, { useState } from "react";
+import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { motion } from "framer-motion";
 
-import { HiMenuAlt4, HiX} from'react-icons/hi';
-import{motion} from 'framer-motion';
-import { useState } from 'react';
+import { images } from "../../constants";
+import "./Navbar.scss";
 
-import './Navbar.scss';
-const Navbar = () => {  
-
+const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="app__navbar">
@@ -22,7 +20,6 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
@@ -33,20 +30,20 @@ const Navbar = () => {
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
             <HiX onClick={() => setToggle(false)} />
-            {["home", "about", "work", "skills", "contact"].map((item) => (
-              <ul key={item}>
-                <li>
+            <ul>
+              {["home", "about", "work", "skills", "contact"].map((item) => (
+                <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
                   </a>
                 </li>
-              </ul>
-            ))}
+              ))}
+            </ul>
           </motion.div>
         )}
       </div>
     </nav>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
