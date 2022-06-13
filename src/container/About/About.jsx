@@ -14,7 +14,7 @@ const About = () => {
 
     client.fetch(query).then((data) => {
       setAbouts(data);
-      
+       
     });
   }, []);
 
@@ -24,14 +24,14 @@ const About = () => {
         <span>Education</span>
       </h2>
 
-      <div className="app__profiles">
+      <div className="app__abouts">
         {abouts.map((about, index) => (
           <motion.div
-            whileInView={{ opacity: [0,1],scale:[1,1.3,1] }}
-            // whileHover={{ scale: 1.1 }}
+            whileInView={{ opacity: [0, 1], scale: [1, 1.3, 1] }}
+            whileHover={{ scale: [1, 1.3, 1] }}
             whileTap={{ scale: 1.3 }}
             transition={{ duration: 1, type: "tween" }}
-            className="app__profile-item"
+            className="app__about-item"
             key={about.title + index}
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />

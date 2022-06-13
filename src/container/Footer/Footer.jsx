@@ -68,6 +68,7 @@ const Footer = () => {
               name="username"
               value={username}
               onChange={handleChangeInput}
+              autoComplete="off"
             />
           </div>
           <div className="app__flex">
@@ -78,6 +79,7 @@ const Footer = () => {
               name="email"
               value={email}
               onChange={handleChangeInput}
+              autoComplete="off"
             />
           </div>
           <div>

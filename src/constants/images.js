@@ -1,13 +1,12 @@
 /* eslint-disable import/no-anonymous-default-export */
-import node from "../assets/node.png";
-import email from "../assets/email.png";
-import mobile from "../assets/mobile.png";
+import node from "../assets/node.webp";
+import email from "../assets/email.webp";
+import mobile from "../assets/mobile.webp";
 import circle from "../assets/circle.svg";
 import userlogo from "../assets/userlogo.svg"
-import react from "../assets/react.png";
-import redux from "../assets/redux.png";
-import pic1 from "../assets/pic1.png";
-import pic2 from "../assets/pic2.png";
+import react from "../assets/react.webp";
+import redux from "../assets/redux.webp";
+import pic2 from "../assets/pic2.webp";
 export default {
   
   email,
@@ -17,6 +16,5 @@ export default {
   circle,
   node,
   userlogo,
-  pic1,
   pic2
 };

@@ -2,29 +2,28 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    margin-top: 1.7rem;
+    margin-top: 1rem;
 }
 
-.app__abouts {
+.app__profiles {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
- 
-.app__about-item {
+
+.app__profile-item {
     width: 190px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 2rem;
     &:hover {
-        img{
-
-            box-shadow: 0 0 50px rgba(0, 255, 234, 0.5);
-        }
+           img{
+box-shadow: 0 0 50px rgba(0, 255, 234, 0.5);
+           } 
         }
     img {
         width: 100%;
@@ -32,10 +31,9 @@
         border-radius: 15px;
         object-fit: cover;
         border: 1px solid rgba(0, 255, 234, 0.5);
-        
-        
+       
+             
     }
-
     @media screen and (min-width: 2000px) {
         width: 370px;
         margin: 2rem 4rem;
