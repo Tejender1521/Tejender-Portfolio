@@ -19,6 +19,7 @@ const Navbar = () => {
           scale: [1, 2, 2, 1, 1],
           rotate: [0, 0, 270, 270, 0],
         }}
+        whileTap={{ scale: [1, 2, 2, 1, 1], rotate: [0, 0, 270, 270, 0] }}
         transition={{ duration: 2.5 }}
       >
         <img src={images.userlogo} alt="logo" />

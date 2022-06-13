@@ -32,8 +32,12 @@ const Skills = () => {
           {skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 1.5}}
+              transition={{ duration: 1.5 }}
               whileHover={{
+                scale: [1, 2, 2, 1, 1],
+                rotate: [0, 0, -270, 270, 0],
+              }}
+              whileTap={{
                 scale: [1, 2, 2, 1, 1],
                 rotate: [0, 0, -270, 270, 0],
               }}
@@ -44,7 +48,12 @@ const Skills = () => {
                 className="app__flex"
                 style={{ backgroundColor: skill.bgColor }}
               >
-                <img src={urlFor(skill.icon)} alt={skill.name} />
+                <motion.img
+                  src={urlFor(skill.icon)}
+                  alt={skill.name}
+                  animate={{ rotate: [0, 360] }}
+                  transition={{ repeat: Infinity, duration: 3, delay: 3 }}
+                />
               </div>
               <p className="p-text">{skill.name}</p>
             </motion.div>
