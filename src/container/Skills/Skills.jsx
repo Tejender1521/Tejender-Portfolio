@@ -32,7 +32,11 @@ const Skills = () => {
           {skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 1.5}}
+              whileHover={{
+                scale: [1, 2, 2, 1, 1],
+                rotate: [0, 0, -270, 270, 0],
+              }}
               className="app__skills-item app__flex"
               key={skill.name}
             >

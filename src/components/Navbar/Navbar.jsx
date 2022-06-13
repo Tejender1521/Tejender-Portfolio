@@ -9,9 +9,20 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="app__navbar">
-      <div className="app__navbar-logo">
+      <motion.div
+        className="app__navbar-logo"
+        whileHover={{
+          scale: [1, 2, 2, 1, 1],
+          rotate: [0, 0, 270, 270, 0],
+        }}
+        animate={{
+          scale: [1, 2, 2, 1, 1],
+          rotate: [0, 0, 270, 270, 0],
+        }}
+        transition={{ duration: 2.5 }}
+      >
         <img src={images.userlogo} alt="logo" />
-      </div>
+      </motion.div>
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
@@ -27,7 +38,7 @@ const Navbar = () => {
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
-            transition={{ duration: 0.85, ease: "easeOut" }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
