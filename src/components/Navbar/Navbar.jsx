@@ -22,7 +22,7 @@ const Navbar = () => {
         whileTap={{ scale: [1, 2, 2, 1, 1], rotate: [0, 0, 270, 270, 0] }}
         transition={{ duration: 2.5 }}
       >
-        <img src={images.userlogo} alt="logo" />
+        <img src={images.userlogo} alt="logo"  />
       </motion.div>
       <ul className="app__navbar-links">
         {["home", "about", "work","profile", "skills", "contact"].map((item) => (
