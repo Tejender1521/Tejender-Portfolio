@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
@@ -91,9 +91,15 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>
+          <motion.button
+            whileInView={{ opacity: [0, 1] }}
+            whileHover={{ scale: 1.2 }}
+            type="button"
+            className="p-text"
+            onClick={handleSubmit}
+          >
             {!loading ? "Send Message" : "Sending..."}
-          </button>
+          </motion.button>
         </div>
       ) : (
         <div>
