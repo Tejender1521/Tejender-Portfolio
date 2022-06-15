@@ -27,10 +27,10 @@ const About = () => {
       <div className="app__abouts">
         {abouts.map((about, index) => (
           <motion.div
-            whileInView={{ opacity: [0, 1], scale: [1, 1.3, 1] }}
-            whileHover={{ scale: [1, 1.3, 1] }}
+            whileInView={{ opacity: [0, 1]}}
+            whileHover={{ scale: [1, 1.3] }}
             whileTap={{ scale: 1.3 }}
-            transition={{ duration: 1, type: "tween" }}
+            transition={{ duration: 0.5}}
             className="app__about-item"
             key={about.title + index}
           >
