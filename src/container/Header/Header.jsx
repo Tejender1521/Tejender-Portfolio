@@ -18,9 +18,7 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    
     <div className="app__header app__flex">
-    
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -47,7 +45,10 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src={images.pic2} alt="profile" />
+        <img
+          src={images.mainheader}
+          alt="profile"
+        />
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -67,14 +68,13 @@ const Header = () => {
             <motion.img
               src={circle}
               alt="circle"
-              animate={{ rotate: [0,360] }}
+              animate={{ rotate: [0, 360] }}
               transition={{ repeat: Infinity, duration: 2.5 }}
             />
           </div>
         ))}
       </motion.div>
     </div>
-    
   );
 };
 

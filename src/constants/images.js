@@ -7,8 +7,9 @@ import userlogo from "../assets/userlogo.svg"
 import react from "../assets/react.webp";
 import redux from "../assets/redux.webp";
 import pic2 from "../assets/pic2.webp";
+import mainheader from "../assets/mainheader.png"
 export default {
-  
+  mainheader,
   email,
   mobile,
   react,
